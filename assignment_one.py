@@ -1,7 +1,7 @@
 # remember to use comments!
 import turtle
 
-turtle.speed(100)
+turtle.speed(500)
 def makealargesquare():
     for x in range(4):
         turtle.forward(200)
