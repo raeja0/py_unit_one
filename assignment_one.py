@@ -1,28 +1,30 @@
 # remember to use comments!
 import turtle
 
-turtle.speed(500)
-def makealargesquare():
-    for x in range(4):
-        turtle.forward(200)
-        turtle.left(90)
+turtle.speed(100)
 
-def makeamediumsquare():
-    for x in range(4):
+def pentagon():
+    turtle.color('light blue')
+    for x in range(5):
         turtle.forward(100)
-        turtle.left(90)
+        turtle.left(72)
 
-def makeasmallsquare():
-    for x in range(4):
-        turtle.forward(50)
-        turtle.left(90)
+def diamond():
+    turtle.color('pink')
+    for x in range(2):
+        turtle.forward(100)
+        turtle.left(125)
+        turtle.forward(100)
+        turtle.left(55)
 
-for y in range (40):
-    makealargesquare()
-    turtle.left(3)
-    makeamediumsquare()
-    turtle.left(3)
-    makeasmallsquare()
-    turtle.left(3)
+turtle.penup()
+turtle.forward(-100)
+turtle.pendown()
+
+for x in range(20):
+    diamond()
+    turtle.left(9)
+    pentagon()
+    turtle.left(9)
 
 turtle.exitonclick()
