@@ -14,19 +14,20 @@ def draw_house(house_size, house_color, roof_color):
     for x in range(4):
         turtle.forward(house_size)
         turtle.left(90)
-    turtle.right(270)
+
+    turtle.left(90)
     turtle.forward(house_size)
     turtle.right(90)
     turtle.end_fill()
     turtle.fillcolor(roof_color)
     turtle.begin_fill()
+
     for y in range(4):
         turtle.forward(house_size)
         turtle.left(120)
     turtle.end_fill()
     turtle.right(210)
     turtle.forward(house_size)
-    #turtle.left(90)
 
 turtle.penup()
 turtle.forward(-300)
