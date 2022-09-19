@@ -32,8 +32,8 @@ def decahedron(): # Defines how to make a decahedron
 turtle.penup() # Sets turtle starting location
 turtle.forward(-200)
 turtle.pendown()
-# Draws first mosaic
-for x in range(20):
+
+for x in range(20): # Draws first mosaic
     diamond()
     turtle.left(9)
     pentagon()
